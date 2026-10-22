@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💻 Flashcards de Tecnologia</h1>
+        <p>Toque ou passe o mouse nos cartões para descobrir!</p>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <button class="flashcard" type="button"
+                aria-label="Virar cartão sobre hardware">
+                <span class="card-inner">
+                    <span class="card-front">
+                        <span class="emoji">🖥️</span>
+                        <h2>Hardware</h2>
+                        <p>Toque para descobrir</p>
+                    </span>
+                    <span class="card-back">
+                        <h2>O que é hardware?</h2>
+                        <p>São as partes físicas de um computador,
+                        como teclado, mouse, monitor e processador.</p>
+                    </span>
+                </span>
+            </button>
+
+            <button class="flashcard" type="button"
+                aria-label="Virar cartão sobre software">
+                <span class="card-inner">
+                    <span class="card-front">
+                        <span class="emoji">💿</span>
+                        <h2>Software</h2>
+                        <p>Toque para descobrir</p>
+                    </span>
+                    <span class="card-back">
+                        <h2>O que é software?</h2>
+                        <p>São os programas e aplicativos de um
+                        dispositivo, como jogos, navegadores e sistemas.</p>
+                    </span>
+                </span>
+            </button>
+
+            <button class="flashcard" type="button"
+                aria-label="Virar cartão sobre inteligência artificial">
+                <span class="card-inner">
+                    <span class="card-front">
+                        <span class="emoji">🤖</span>
+                        <h2>Inteligência Artificial</h2>
+                        <p>Toque para descobrir</p>
+                    </span>
+                    <span class="card-back">
+                        <h2>O que é IA?</h2>
+                        <p>É uma tecnologia que permite que máquinas
+                        realizem tarefas como reconhecer imagens,
+                        compreender textos e gerar respostas.</p>
+                    </span>
+                </span>
+            </button>
+
+            <button class="flashcard" type="button"
+                aria-label="Virar cartão sobre internet">
+                <span class="card-inner">
+                    <span class="card-front">
+                        <span class="emoji">🌐</span>
+                        <h2>Internet</h2>
+                        <p>Toque para descobrir</p>
+                    </span>
+                    <span class="card-back">
+                        <h2>O que é internet?</h2>
+                        <p>É uma rede mundial que conecta dispositivos
+                        e permite compartilhar informações e acessar
+                        sites e serviços online.</p>
+                    </span>
+                </span>
+            </button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>📚 Aprender tecnologia pode ser divertido!</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".flashcard").forEach(card => {
+            card.addEventListener("click", () => {
+                card.classList.toggle("flipped");
+            });
+        });
+    </script>
+
+</body>
+</html>
